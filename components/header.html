@@ -10,13 +10,12 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #fff;
+            background-color: #fff; /* Màu nền cho header */
             z-index: 1000;
             padding: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
         }
 
-        /* Responsive for mobile */
         .logo img {
             max-width: 100%;
             height: auto;
@@ -38,7 +37,12 @@
             margin-left: 20px;
         }
 
-        /* Media queries to adjust for smaller screens */
+        /* Tạo không gian trống cho phần nội dung dưới header */
+        body {
+            margin: 0;
+            padding-top: 80px; /* Điều chỉnh theo chiều cao của header */
+        }
+
         @media (max-width: 768px) {
             .navbar ul {
                 flex-direction: column;
@@ -70,7 +74,6 @@
                 background-color: #333;
             }
         }
-
     </style>
 </head>
 <body>
@@ -107,7 +110,7 @@
 </header>
 
 <!-- Nội dung chính của trang -->
-<div style="margin-top: 100px;">
+<div>
     <!-- Nội dung trang web nằm ở đây -->
 </div>
 
@@ -120,3 +123,4 @@
 
 </body>
 </html>
+
