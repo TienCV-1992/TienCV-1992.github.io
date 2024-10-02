@@ -1,13 +1,14 @@
 .header {
-    position: absolute;
     width: 100%;
     top: 0;
-    height: 100%;
+    position: relative; /* Điều chỉnh position từ absolute thành relative */
+    z-index: 10;
+    background-color: #0b396d; /* Thêm màu nền cho header */
 }
 
 .header .logo {
     text-align: center;
-    padding: 18px 0;
+    padding: 10px 0;
 }
 
 .header .logo img {
@@ -17,13 +18,12 @@
 .navbar {
     padding: 18px 48px;
     background-color: #0b396d;
-    height: 100%;
     position: relative;
 }
 
 .navbar .list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 12px;
     position: relative;
     z-index: 9;
@@ -46,23 +46,17 @@
 .navbar .list li a {
     transition: all 0.35s ease;
     padding: 0 8px;
-}
-
-
-.navbar .list li a:hover {
-    color: #ffd500;
-}
-
-.navbar .list li a.active {
-    color: #ffd500;
-}
-
-.navbar .list a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
+.navbar .list li a:hover,
+.navbar .list li a.active {
+    color: #ffd500;
+}
+
+/* Điều chỉnh cho màn hình nhỏ hơn */
 @media only screen and (max-width: 976px) {
     .navbar .list li {
         font-size: 2vw;
@@ -71,8 +65,7 @@
 
 @media only screen and (max-width: 780px) { 
     .navbar .list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr); /* Chia 3 cột thay vì 5 */
         row-gap: 6px;
     }
 
@@ -82,16 +75,20 @@
 }
 
 @media only screen and (max-width: 580px) {
+    .navbar {
+        padding: 10px; /* Giảm padding trên màn hình nhỏ */
+    }
+
     .navbar .list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Chia 2 cột thay vì 5 */
         column-gap: 12px;
     }
 
     .navbar .list li {
-        white-space: nowrap;
-        font-size: 16px;
-        border: 1px solid #ccc;
+        font-size: 14px; /* Giảm kích thước chữ */
         padding: 4px 8px;
+        white-space: nowrap; /* Không cho phép xuống dòng */
+        border: 1px solid #ccc;
         border-radius: 6px;
     }
 }
