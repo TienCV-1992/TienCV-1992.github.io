@@ -1,9 +1,9 @@
 .header {
     width: 100%;
     top: 0;
-    position: relative; /* Điều chỉnh position từ absolute thành relative */
-    z-index: 10;
-    background-color: #0b396d; /* Thêm màu nền cho header */
+    position: relative; /* Giữ cho header nằm đúng vị trí */
+    background-color: #0b396d; /* Đảm bảo màu nền header */
+    z-index: 10; /* Đảm bảo header luôn ở trên cùng */
 }
 
 .header .logo {
@@ -12,21 +12,18 @@
 }
 
 .header .logo img {
-    width: 150px;
+    width: 150px; /* Kích thước logo trên máy tính */
 }
 
 .navbar {
     padding: 18px 48px;
     background-color: #0b396d;
-    position: relative;
 }
 
 .navbar .list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 12px;
-    position: relative;
-    z-index: 9;
+    grid-template-columns: repeat(5, 1fr); /* Chia layout thành 5 cột cho màn hình lớn */
+    gap: 12px;
 }
 
 .navbar .list li {
@@ -36,7 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 
 .row-span-2 {
@@ -56,39 +52,51 @@
     color: #ffd500;
 }
 
-/* Điều chỉnh cho màn hình nhỏ hơn */
+/* --- Media Queries --- */
+
+/* Màn hình vừa - khoảng 976px trở xuống */
 @media only screen and (max-width: 976px) {
+    .navbar .list {
+        grid-template-columns: repeat(3, 1fr); /* Chia 3 cột cho màn hình vừa */
+    }
+
     .navbar .list li {
-        font-size: 2vw;
+        font-size: 1.2em;
     }
 }
 
+/* Màn hình nhỏ - khoảng 780px trở xuống */
 @media only screen and (max-width: 780px) { 
     .navbar .list {
-        grid-template-columns: repeat(3, 1fr); /* Chia 3 cột thay vì 5 */
-        row-gap: 6px;
+        grid-template-columns: repeat(2, 1fr); /* Chia 2 cột cho màn hình nhỏ */
+        row-gap: 8px;
     }
 
     .navbar .list li {
-        font-size: 2.5vw;
+        font-size: 1em;
     }
 }
 
+/* Màn hình rất nhỏ - khoảng 580px trở xuống (dành cho điện thoại) */
 @media only screen and (max-width: 580px) {
     .navbar {
-        padding: 10px; /* Giảm padding trên màn hình nhỏ */
+        padding: 10px; /* Giảm padding cho header */
     }
 
     .navbar .list {
-        grid-template-columns: repeat(2, 1fr); /* Chia 2 cột thay vì 5 */
-        column-gap: 12px;
+        grid-template-columns: 1fr; /* Một cột cho màn hình rất nhỏ */
+        gap: 10px;
     }
 
     .navbar .list li {
-        font-size: 14px; /* Giảm kích thước chữ */
-        padding: 4px 8px;
-        white-space: nowrap; /* Không cho phép xuống dòng */
+        font-size: 0.9em; /* Giảm kích thước chữ */
+        padding: 8px;
+        white-space: nowrap; /* Ngăn chữ bị xuống dòng */
         border: 1px solid #ccc;
         border-radius: 6px;
+    }
+
+    .header .logo img {
+        width: 120px; /* Giảm kích thước logo trên điện thoại */
     }
 }
