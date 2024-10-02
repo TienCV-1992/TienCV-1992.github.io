@@ -1,93 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header Fix</title>
-    <style>
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #fff; /* Màu nền cho header */
-            z-index: 1000;
-            padding: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
-        }
-
-        .logo img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .navbar ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .navbar ul li {
-            margin-left: 20px;
-        }
-
-        /* Tạo không gian trống cho phần nội dung dưới header */
-        body {
-            margin: 0;
-            padding-top: 80px; /* Điều chỉnh theo chiều cao của header */
-        }
-
-        @media (max-width: 768px) {
-            .navbar ul {
-                flex-direction: column;
-                background-color: #fff;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                left: 0;
-                z-index: 999;
-                padding: 10px;
-                display: none; /* Ẩn menu trên mobile */
-            }
-
-            .navbar ul.active {
-                display: block; /* Hiện menu khi nhấn */
-            }
-
-            .hamburger {
-                display: block;
-                cursor: pointer;
-                margin-left: auto;
-            }
-
-            .hamburger span {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin: 5px;
-                background-color: #333;
-            }
-        }
-    </style>
-</head>
-<body>
-
 <header class="header">
     <div class="logo">
-        <img src="https://raw.githubusercontent.com/TienCV-1992/TienCV-1992.github.io/refs/heads/main/images/logo.png" alt="Logo">
+        <img src="../images/logo.png" alt="Logo">
     </div>
     <nav class="navbar">
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <ul class="list">
             <li class="row-span-2">
                 <a href="/">Home</a>
@@ -105,22 +20,9 @@
                 <a href="../contact-us.html">Contact Us</a>
             </li>
             <li>Services</li>
+            <li>Services</li>
+            <li>Services</li>
+            <li></li>
         </ul>
     </nav>
 </header>
-
-<!-- Nội dung chính của trang -->
-<div>
-    <!-- Nội dung trang web nằm ở đây -->
-</div>
-
-<script>
-    function toggleMenu() {
-        const navbarList = document.querySelector('.navbar ul');
-        navbarList.classList.toggle('active');
-    }
-</script>
-
-</body>
-</html>
-
