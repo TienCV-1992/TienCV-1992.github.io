@@ -1,0 +1,30 @@
+.main {
+    height: 100dvh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+.header-wrapper {
+    position: relative;
+    height: 320px;
+    background: white;
+}
+
+.container {
+    text-align: center;
+    background-color: #d21249;
+    color: white;
+    min-height: 100vh;
+    padding: 48px;
+    position: relative;
+}
+
+.container p {
+    margin: 24px 0;
+    font-weight: 700;
+}
+
+.container p span {
+    font-weight: 300;
+}
