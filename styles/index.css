@@ -59,9 +59,15 @@
     font-size: 1.2em;
 }
 
-.left-content .content .capability p {
-    margin: 18px 0;
+.left-content .capability h2 {
+    font-weight: 700;
+    font-size: clamp(1.2rem, 5vw, 2.5rem); /* Dynamic scaling */
+}
+
+.left-content .capability p {
+    font-size: clamp(0.9rem, 4vw, 1.2rem); /* Dynamic scaling */
     line-height: 1.35;
+    margin: 18px 0;
 }
 
 .left-content .core h2 {
