@@ -3,3 +3,10 @@
 body {
     background: #ccc;
 }
+
+#paypal-button-container {
+    max-height: 500px;
+    overflow-y: auto; 
+    padding-right: 10px; 
+    padding-bottom: 50px;
+}
