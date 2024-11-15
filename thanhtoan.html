@@ -18,18 +18,31 @@
             <header></header>
         </div>
         <div class="container" style="background-color: white;">
-            <!-- Đây là nơi PayPal Button sẽ xuất hiện -->
-            <div id="paypal-button-container"></div>
+            <div class="pay">
+                <input type="number" id="amount" min="1" step="0.01" placeholder="Nhập số tiền thanh toán">
+
+                <!-- Đây là nơi PayPal Button sẽ xuất hiện -->
+                <div id="paypal-button-container"></div>
+            </div>
 
             <script
                 src="https://www.paypal.com/sdk/js?client-id=ARgWF0JcXBAXQ6GUqsvEpM00jLlbyH-XqMC3UKVNJ77p-JR6XMpmncWyX-kxM0hEJlXat0kYIfGSlvZa&currency=USD"></script>
             <script>
                 paypal.Buttons({
                     createOrder: function (data, actions) {
+                        // Lấy giá trị từ ô input số tiền
+                        var amount = document.getElementById('amount').value;
+
+                        // Kiểm tra nếu số tiền rỗng hoặc bằng 0 thì thông báo lỗi
+                        if (!amount || parseFloat(amount) <= 0) {
+                            alert('Vui lòng nhập số tiền hợp lệ.');
+                            return;
+                        }
+
                         return actions.order.create({
                             purchase_units: [{
                                 amount: {
-                                    value: '10.00' // Số tiền bạn muốn thu
+                                    value: amount // Số tiền người dùng nhập
                                 }
                             }]
                         });
@@ -40,7 +53,6 @@
                         });
                     },
                     onError: function (err) {
-                        alert('Có lỗi xảy ra. Vui lòng thử lại.');
                     }
                 }).render('#paypal-button-container'); // Hiển thị nút PayPal
             </script>
