@@ -1,45 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="shortcut icon" href="./images//logo-short.PNG" type="image/x-icon">
-
-    <link rel="stylesheet" href="./styles/contact-us.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Interglobe LLC about financial consulting, information technology risk, cybersecurity, audit, compliance, and internal control services.">
+    <meta name="theme-color" content="#1f2d5c">
+    <title>Contact Interglobe LLC</title>
+    <link rel="icon" href="./images/logo-short.png" type="image/png">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
 </head>
 <body>
-    <div class="main">
-        <div class="header-wrapper" >
-            <header></header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-site-header>
+        <div class="shell header-inner">
+            <a class="brand" href="./index.html" aria-label="Interglobe LLC home">
+                <img src="./images/logo-short.png" alt="" width="58" height="58">
+                <span class="brand-copy"><strong>Interglobe LLC</strong><span>Financial &amp; Technology Risk Advisory</span></span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span><span></span><span></span><span></span>
+            </button>
+            <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+                <a href="./index.html">Home</a>
+                <a href="./financial-consulting.html">Financial Consulting</a>
+                <a href="./information-technology.html">Information Technology</a>
+                <a href="./index.html#why-interglobe">Why Interglobe</a>
+                <a class="button button-small" href="./contact-us.html" aria-current="page">Contact Us</a>
+            </nav>
         </div>
-        <div class="container">
-            <p>
-                Phone:
-                <span> (626) 636-5965</span>
-            </p>
-            <p>
-                E-Mail
-                <span>info@interglobeus.com</span>
-            </p>
-            <p>
-                Address
-                <span>77 Las Tunas Dr. Ste 204, Arcadia, CA 91007</span>
-            </p>
-            <p>
-                Work Area:
-                <span>Nationwide</span>
-            </p>
-            <p>
-                Socio Economic:
-                <br />
-                <br />
-                <span>Service-Disabled Veteran-Owned Small Business</span>
-            </p>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-hero">
+            <div class="shell contact-hero-grid">
+                <div>
+                    <p class="eyebrow light-eyebrow">Contact Interglobe</p>
+                    <h1>Let’s discuss your financial and technology risk priorities.</h1>
+                    <p>Connect with Interglobe about audit readiness, internal controls, compliance, cybersecurity, IT governance, cloud, data, third-party risk, business continuity, or operational resilience.</p>
+                </div>
+                <div class="contact-credential-panel">
+                    <p>Credentialed, interdisciplinary leadership</p>
+                    <div class="credential-grid"><span>CPA</span><span>CISA</span><span>CISM</span><span>CRISC</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="shell contact-layout">
+                <div class="contact-primary">
+                    <div class="section-heading">
+                        <p class="eyebrow">Start a conversation</p>
+                        <h2>Reach our team directly.</h2>
+                        <p>Include a brief description of your organization, priorities, desired timeline, and the type of support you are considering.</p>
+                    </div>
+
+                    <div class="contact-card-grid">
+                        <a class="contact-card" href="tel:+16266365965">
+                            <span class="contact-label">Phone</span>
+                            <strong>(626) 636-5965</strong>
+                            <span>Call our team</span>
+                        </a>
+                        <a class="contact-card" href="mailto:info@interglobeus.com?subject=Consultation%20Request%20-%20Interglobe%20LLC">
+                            <span class="contact-label">Email</span>
+                            <strong>info@interglobeus.com</strong>
+                            <span>Send a consultation request</span>
+                        </a>
+                        <div class="contact-card">
+                            <span class="contact-label">Office</span>
+                            <strong>77 Las Tunas Dr., Ste 204</strong>
+                            <span>Arcadia, CA 91007</span>
+                        </div>
+                        <div class="contact-card">
+                            <span class="contact-label">Service Area</span>
+                            <strong>Nationwide</strong>
+                            <span>United States</span>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="contact-sidebar">
+                    <div class="sidebar-card">
+                        <p class="sidebar-kicker">Our core practices</p>
+                        <h2>How can we support you?</h2>
+                        <a href="./financial-consulting.html">
+                            <strong>Financial Consulting</strong>
+                            <span>Audit readiness, internal controls, compliance, processes, reporting, fraud risk, and financial systems.</span>
+                        </a>
+                        <a href="./information-technology.html">
+                            <strong>Information Technology</strong>
+                            <span>Technology risk, cybersecurity, IT controls, governance, cloud, data, third parties, and resilience.</span>
+                        </a>
+                    </div>
+                    <div class="small-business-card">
+                        <span>Socio-Economic Profile</span>
+                        <strong>Service-Disabled Veteran-Owned Small Business</strong>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="./index.html"><img src="./images/logo-short.png" alt="" width="52" height="52"><span class="brand-copy"><strong>Interglobe LLC</strong><span>Financial &amp; Technology Risk Advisory</span></span></a>
+                <p>Supporting government agencies, government contractors, and regulated organizations nationwide.</p>
+            </div>
+            <div><h2 class="footer-heading">Services</h2><ul class="footer-links"><li><a href="./financial-consulting.html">Financial Consulting</a></li><li><a href="./information-technology.html">Information Technology</a></li><li><a href="./index.html#why-interglobe">Why Interglobe</a></li></ul></div>
+            <div><h2 class="footer-heading">Contact</h2><address class="footer-contact"><a href="tel:+16266365965">(626) 636-5965</a><a href="mailto:info@interglobeus.com">info@interglobeus.com</a><span>77 Las Tunas Dr., Ste 204<br>Arcadia, CA 91007</span></address></div>
         </div>
-    </div>
-    <script src="./js/render.js"></script>
+        <div class="shell footer-bottom"><p>© <span data-current-year>2026</span> Interglobe LLC. All rights reserved.</p><p>Service-Disabled Veteran-Owned Small Business</p></div>
+    </footer>
+
+    <script src="./js/site.js" defer></script>
 </body>
 </html>

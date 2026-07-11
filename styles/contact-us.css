@@ -1,30 +1,36 @@
-.main {
-    height: 100dvh;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden !important;
-}
+.contact-hero { position: relative; overflow: hidden; padding: clamp(82px, 10vw, 126px) 0; color: var(--white); background: linear-gradient(125deg, var(--navy-950), var(--navy-800) 65%, #1b7187); }
+.contact-hero::after { content: ""; position: absolute; width: 520px; height: 520px; top: -280px; right: -130px; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 50%; }
+.contact-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.55fr); gap: clamp(42px, 8vw, 100px); align-items: center; }
+.contact-hero h1 { max-width: 850px; color: var(--white); font-size: clamp(2.6rem, 5.5vw, 4.75rem); }
+.contact-hero p:not(.eyebrow) { max-width: 780px; margin-top: 22px; color: #d8e2ef; font-size: 1.08rem; }
+.contact-credential-panel { padding: 28px; background: rgba(255, 255, 255, 0.09); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-md); }
+.contact-credential-panel > p { margin: 0 0 16px !important; color: #dce6f2 !important; font-size: 0.82rem !important; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.contact-section { background: var(--surface); }
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr); gap: clamp(38px, 7vw, 88px); align-items: start; }
+.contact-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 42px; }
+.contact-card { display: grid; min-height: 190px; align-content: space-between; padding: 28px; color: var(--ink); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
+a.contact-card:hover { transform: translateY(-3px); border-color: rgba(45, 147, 163, 0.52); box-shadow: var(--shadow-md); }
+.contact-label { color: var(--blue-700); font-size: 0.72rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
+.contact-card strong { align-self: center; color: var(--navy-950); font-size: 1.15rem; line-height: 1.35; }
+.contact-card > span:last-child { color: var(--muted); font-size: 0.9rem; }
+.contact-sidebar { display: grid; gap: 20px; }
+.sidebar-card { padding: 30px; background: var(--navy-900); border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
+.sidebar-kicker { color: #b9c6df; font-size: 0.72rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
+.sidebar-card h2 { margin-top: 8px; color: var(--white); font-size: 1.75rem; }
+.sidebar-card > a { display: grid; gap: 7px; margin-top: 22px; padding-top: 22px; color: var(--white); border-top: 1px solid rgba(255, 255, 255, 0.16); text-decoration: none; }
+.sidebar-card > a strong { font-size: 1rem; }
+.sidebar-card > a span { color: #b9c6df; font-size: 0.88rem; }
+.sidebar-card > a:hover strong { text-decoration: underline; }
+.small-business-card { padding: 26px 28px; background: #f5efe2; border: 1px solid #e4d6b9; border-radius: var(--radius-md); }
+.small-business-card span { display: block; color: #806b3d; font-size: 0.72rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase; }
+.small-business-card strong { display: block; margin-top: 8px; color: #554522; line-height: 1.4; }
 
-.header-wrapper {
-    position: relative;
-    height: 320px;
-    background: white;
+@media (max-width: 900px) {
+    .contact-hero-grid, .contact-layout { grid-template-columns: 1fr; }
+    .contact-credential-panel { max-width: 620px; }
 }
-
-.container {
-    text-align: center;
-    background-color: #d21249;
-    color: white;
-    min-height: 100vh;
-    padding: 48px;
-    position: relative;
-}
-
-.container p {
-    margin: 24px 0;
-    font-weight: 700;
-}
-
-.container p span {
-    font-weight: 300;
+@media (max-width: 620px) {
+    .contact-hero { padding: 72px 0; }
+    .contact-card-grid { grid-template-columns: 1fr; }
+    .contact-card { min-height: 165px; }
 }

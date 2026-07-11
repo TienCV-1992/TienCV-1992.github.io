@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interglobeus.com/sitemap.xml

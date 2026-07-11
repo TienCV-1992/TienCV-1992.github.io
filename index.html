@@ -1,122 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
-    <link rel="shortcut icon" href="./images/logo-short.png" type="image/x-icon">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interglobe LLC provides financial consulting, information technology risk, cybersecurity, audit, compliance, and internal control services to government and regulated organizations.">
+    <meta name="theme-color" content="#1f2d5c">
+    <title>Interglobe LLC | Financial & Technology Risk Advisory</title>
+    <link rel="icon" href="./images/logo-short.png" type="image/png">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/header.css">
 </head>
-
 <body>
-    <div class="main">
-        <div class="header-wrapper" >
-            <div id="particles-js-header"></div>
-            <header></header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-site-header>
+        <div class="shell header-inner">
+            <a class="brand" href="./index.html" aria-label="Interglobe LLC home">
+                <img src="./images/logo-short.png" alt="" width="58" height="58">
+                <span class="brand-copy">
+                    <strong>Interglobe LLC</strong>
+                    <span>Financial &amp; Technology Risk Advisory</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+                <a href="./index.html" aria-current="page">Home</a>
+                <a href="./financial-consulting.html">Financial Consulting</a>
+                <a href="./information-technology.html">Information Technology</a>
+                <a href="#why-interglobe">Why Interglobe</a>
+                <a class="button button-small" href="./contact-us.html">Contact Us</a>
+            </nav>
         </div>
-        <div class="container">
-            <div class="main-viewport">
-                <div class="left-content" id="particles-js">
-                    <div class="dew"></div>
-                    <div class="content">
-                        <div class="capability">
-                            <h2>
-                                CAPABILITY STATEMENT
-                            </h2>
-                            <p>
-                                Interglobe, LLC is a premier distributor,
-                                offering a diverse s election of office
-                                supplies, janitorial products, and IT equipment.
-                                Our primary mission is to enhance the efficiency
-                                and efficacy of your agency's office operations.
-                                Interglobe, LLC is committed to delivering a
-                                synergy of quality, trust, and exceptional
-                                service, providing comprehensive and
-                                high-quality solutions designed to foster
-                                operational excellence and elevate your office
-                                experience.
-                            </p>
-                        </div>
-                        <div class="core">
-                            <h2>CORE COMPETENCIES</h2>
-                            <h3>Office Supplies: Broad range of quality
-                                essentials for seamless operations</h3>
-                            <ul class="list">
-                                <li>IT Equipment: Advanced and reliable
-                                    solutions for diverse organizational needs
-                                </li>
-                                <li>Office Equipment: State-of-the-art solutions
-                                    to enhance comfort and productivity</li>
-                                <li>Janitorial Supplies: Extensive selection for
-                                    maintaining a clean, inviting workspace</li>
-                            </ul>
-                        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="shell hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Financial consulting · Technology risk · Cybersecurity</p>
+                    <h1>Stronger accountability, governance, controls, and resilience.</h1>
+                    <p class="hero-lead">Interglobe LLC helps government agencies, government contractors, and regulated organizations address complex financial, technology, cybersecurity, compliance, and operational risks.</p>
+                    <div class="button-row">
+                        <a class="button" href="#primary-services">Explore Our Services</a>
+                        <a class="button button-ghost" href="./contact-us.html">Schedule a Consultation</a>
                     </div>
+                    <ul class="audience-list" aria-label="Organizations we serve">
+                        <li>Government agencies</li>
+                        <li>Government contractors</li>
+                        <li>Regulated organizations</li>
+                    </ul>
                 </div>
-                <div class="right-content" >
-                    <div class="content">
-                        <h2>Specialized product</h2>
-                        <ul class="list">
-                            <li>Office Equipment Merchant</li>
-                            <li>Furniture Merchant</li>
-                            <li>Computer and Computer Peripheral Equipment</li>
-                            <li>Software Merchant</li>
-                            <li>Stationery and Office Supplies Merchant</li>
-                            <li>Process, Phys. Dist., and Logistics Consulting
-                                Services</li>
-                            <li>Office Furniture</li>
-                            <li>Office Supplies</li>
-                            <li>Office Devices and Accessories</li>
-                            <li>Typewriters and Office Type Composing Machines
-                            </li>
-                            <li>Miscellaneous Office Machines</li>
-                            <li>Support-Management: Logistics Support</li>
-                        </ul>
+
+                <aside class="hero-proof" aria-label="Interglobe leadership and service profile">
+                    <p class="proof-label">Credentialed leadership</p>
+                    <div class="credential-grid" aria-label="Leadership credentials">
+                        <span>CPA</span>
+                        <span>CISA</span>
+                        <span>CISM</span>
+                        <span>CRISC</span>
                     </div>
+                    <dl class="proof-list">
+                        <div>
+                            <dt>Approach</dt>
+                            <dd>Risk-based and evidence-driven</dd>
+                        </div>
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>Practical, defensible recommendations</dd>
+                        </div>
+                        <div>
+                            <dt>Coverage</dt>
+                            <dd>Nationwide</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section service-overview" id="primary-services" aria-labelledby="services-heading">
+            <div class="shell">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Our two core practices</p>
+                        <h2 id="services-heading">Integrated financial and technology risk services</h2>
+                    </div>
+                    <p>Interglobe brings accounting, audit, compliance, cybersecurity, information-system assurance, governance, and enterprise risk perspectives together in one firm.</p>
+                </div>
+
+                <div class="primary-service-grid">
+                    <article class="primary-service-card financial-card">
+                        <div class="service-number" aria-hidden="true">01</div>
+                        <p class="card-kicker">Financial Consulting Services</p>
+                        <h3>Improve financial accountability and control effectiveness.</h3>
+                        <p>Support for audit readiness, internal controls, compliance risk, financial-process improvement, reporting, fraud risk, and technology-enabled financial controls.</p>
+                        <ul class="check-list compact-list">
+                            <li>Financial audit and audit readiness</li>
+                            <li>Internal controls and risk assessments</li>
+                            <li>Compliance risk management</li>
+                            <li>Financial process improvement</li>
+                            <li>Reporting and management analysis</li>
+                            <li>Fraud risk and program integrity</li>
+                        </ul>
+                        <a class="text-link" href="./financial-consulting.html">View financial consulting services <span aria-hidden="true">→</span></a>
+                    </article>
+
+                    <article class="primary-service-card technology-card">
+                        <div class="service-number" aria-hidden="true">02</div>
+                        <p class="card-kicker">Information Technology Services</p>
+                        <h3>Protect mission-critical systems through stronger governance and resilience.</h3>
+                        <p>Risk-based reviews and advisory support across cybersecurity, IT controls, cloud, data, third parties, business continuity, and technology programs.</p>
+                        <ul class="check-list compact-list">
+                            <li>IT risk assessments</li>
+                            <li>Cybersecurity program assessments</li>
+                            <li>Information-system audit and IT general controls</li>
+                            <li>Technology and cloud governance</li>
+                            <li>Third-party and supply-chain risk</li>
+                            <li>Business continuity and operational resilience</li>
+                        </ul>
+                        <a class="text-link" href="./information-technology.html">View information technology services <span aria-hidden="true">→</span></a>
+                    </article>
                 </div>
             </div>
-            <footer class="footer">
-               <div class="content">
-                    <h2>Differentiators</h2>
-                    <ul class="list">
-                        <li>
-                            <h3>Satisfaction Guarantee</h3>
-                            <p>Committed to 100% customer satisfaction with tailored solutions</p>
-                        </li>
-                        <li>
-                            <h3>Quality Assurance</h3>
-                            <p>Maintains the highest standards in all products and services</p>
-                        </li>
-                        <li>
-                            <h3>Information System Expertise</h3>
-                            <p>Proficient in comprehensive information system audits by certified professionals</p>
-                        </li>
-                        <li>
-                            <h3>Financial Acumen</h3>
-                            <p>Leverages industry and financial insight to deliver optimal solutions</p>
-                        </li>
-                        <li>
-                            <h3>Government Enterprise IT Solutions</h3>
-                            <p>Provides compliant, reliable, and secure solutions</p>
-                        </li>
-                        <li>
-                            <h3>Customer Service</h3>
-                            <p>Transparent and dedicated support addressing individual needs promptly</p>
-                        </li>
-                    </ul>
-               </div>
-            </footer>
+        </section>
+
+        <section class="section capability-section" aria-labelledby="capability-heading">
+            <div class="shell capability-grid">
+                <div class="section-heading sticky-heading">
+                    <p class="eyebrow">Capability Statement</p>
+                    <h2 id="capability-heading">One perspective across financial, technology, and operational risk.</h2>
+                    <p class="heading-note">Our work is designed for organizations that require clear criteria, documented evidence, disciplined analysis, and recommendations that can be implemented.</p>
+                </div>
+
+                <div class="capability-copy">
+                    <p>Interglobe LLC provides financial consulting, information technology risk, cybersecurity, audit, compliance, and internal control services to government agencies, government contractors, and regulated organizations. We help clients strengthen financial accountability, improve technology governance, address cybersecurity and compliance risks, evaluate control effectiveness, and develop practical solutions for complex operational challenges. Our capabilities include financial audit support, audit readiness, compliance risk management, financial process improvement, information system auditing, IT general controls reviews, third-party technology risk, cloud governance, data governance, business continuity, and operational resilience.</p>
+                    <p>Interglobe is led by a Certified Public Accountant and experienced technology risk professional with regulatory experience at the Office of the Comptroller of the Currency. Our leadership holds CPA, CISA, CISM, and CRISC credentials and brings experience across financial audit, cybersecurity, information systems, regulatory compliance, governance, risk management, and internal controls within highly regulated environments. Our work is grounded in defined criteria, documented evidence, risk-based analysis, and clear communication, with a focus on identifying root causes, prioritizing material risks, and delivering practical recommendations that improve accountability, resilience, compliance, and mission performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section why-section" id="why-interglobe" aria-labelledby="why-heading">
+            <div class="shell">
+                <div class="section-heading centered-heading">
+                    <p class="eyebrow">Why Interglobe</p>
+                    <h2 id="why-heading">Integrated expertise. Clear evidence. Practical action.</h2>
+                    <p>Financial and technology risks are often connected. We evaluate those dependencies together and translate findings into prioritized, realistic corrective actions.</p>
+                </div>
+
+                <div class="value-grid">
+                    <article class="value-card">
+                        <span class="value-index">01</span>
+                        <h3>Accounting and Technology Risk in One Firm</h3>
+                        <p>Financial weaknesses frequently originate from technology, data, governance, or process failures. Interglobe’s integrated financial and technology-risk perspective allows us to evaluate those dependencies together.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-index">02</span>
+                        <h3>Regulatory and Control Experience</h3>
+                        <p>Our leadership brings experience evaluating risk, governance, compliance, financial operations, information systems, and internal controls within highly regulated environments.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-index">03</span>
+                        <h3>Credentialed Leadership</h3>
+                        <p>Interglobe’s leadership holds CPA, CISA, CISM, and CRISC credentials, supporting an interdisciplinary approach to accounting, financial audit, cybersecurity, information-system assurance, and risk management.</p>
+                    </article>
+                    <article class="value-card">
+                        <span class="value-index">04</span>
+                        <h3>Practical, Defensible Recommendations</h3>
+                        <p>We do not produce generic observations. Our work is based on defined criteria, supporting evidence, risk significance, root-cause analysis, and realistic corrective actions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-band" aria-labelledby="cta-heading">
+            <div class="shell cta-inner">
+                <div>
+                    <p class="eyebrow light-eyebrow">Start a conversation</p>
+                    <h2 id="cta-heading">Strengthen your financial and technology controls.</h2>
+                    <p>Discuss your audit, compliance, cybersecurity, governance, or risk-management requirements with Interglobe.</p>
+                </div>
+                <a class="button button-light" href="./contact-us.html">Contact Our Team</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="./index.html">
+                    <img src="./images/logo-short.png" alt="" width="52" height="52">
+                    <span class="brand-copy">
+                        <strong>Interglobe LLC</strong>
+                        <span>Financial &amp; Technology Risk Advisory</span>
+                    </span>
+                </a>
+                <p>Supporting government agencies, government contractors, and regulated organizations nationwide.</p>
+            </div>
+            <div>
+                <h2 class="footer-heading">Services</h2>
+                <ul class="footer-links">
+                    <li><a href="./financial-consulting.html">Financial Consulting</a></li>
+                    <li><a href="./information-technology.html">Information Technology</a></li>
+                    <li><a href="#why-interglobe">Why Interglobe</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="footer-heading">Contact</h2>
+                <address class="footer-contact">
+                    <a href="tel:+16266365965">(626) 636-5965</a>
+                    <a href="mailto:info@interglobeus.com">info@interglobeus.com</a>
+                    <span>77 Las Tunas Dr., Ste 204<br>Arcadia, CA 91007</span>
+                </address>
+            </div>
         </div>
-    </div>
+        <div class="shell footer-bottom">
+            <p>© <span data-current-year>2026</span> Interglobe LLC. All rights reserved.</p>
+            <p>Service-Disabled Veteran-Owned Small Business</p>
+        </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="./js/render.js"></script>
-    <script src="./js/particles-js.js"></script>
+    <script src="./js/site.js" defer></script>
 </body>
-
 </html>
