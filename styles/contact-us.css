@@ -8,6 +8,7 @@
 .contact-section { background: var(--surface); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr); gap: clamp(38px, 7vw, 88px); align-items: start; }
 .contact-card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 42px; }
+.contact-card-grid > *:first-child { grid-column: span 2; }
 .contact-card { display: grid; min-height: 190px; align-content: space-between; padding: 28px; color: var(--ink); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
 a.contact-card:hover { transform: translateY(-3px); border-color: rgba(45, 147, 163, 0.52); box-shadow: var(--shadow-md); }
 .contact-label { color: var(--blue-700); font-size: 0.72rem; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -32,5 +33,6 @@ a.contact-card:hover { transform: translateY(-3px); border-color: rgba(45, 147, 
 @media (max-width: 620px) {
     .contact-hero { padding: 72px 0; }
     .contact-card-grid { grid-template-columns: 1fr; }
+    .contact-card-grid > *:first-child { grid-column: span 1; }
     .contact-card { min-height: 165px; }
 }
